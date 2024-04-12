@@ -14,6 +14,8 @@ class ProfileForm(FlaskForm):
     lname = StringField('Last Name', validators=[DataRequired()]) 
     image = FileField("Image") 
     submit = SubmitField('Post')
+    role = SelectField('Role',choices=[("Teacher","Teacher"),("Student","Student")])
+    age = IntegerField('Age', validators=[NumberRange(min=0,max=100)])
 
 class ConsentForm(FlaskForm):
     adult_fname = StringField('First Name',validators=[DataRequired()])
@@ -50,3 +52,11 @@ class ClinicForm(FlaskForm):
     zipcode = StringField('Zipcode',validators=[DataRequired()])
     description = StringField('Description', validators=[DataRequired()])
     submit = SubmitField('Submit')
+
+class AssignmentForm(FlaskForm):
+    assignment_name = StringField('Assignemt Name', validators=[DataRequired()])
+    course = StringField('Course', validators=[DataRequired()])
+    period = IntegerField('Period', validators=[DataRequired()])
+    teacher = StringField('Teacher', validators=[DataRequired()])
+    due_date = DateField('Due Date', validators=[DataRequired()])
+    submit = SubmitField('Assign')

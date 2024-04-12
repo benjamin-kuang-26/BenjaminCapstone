@@ -1,0 +1,56 @@
+<!-- this is a generic form page.  Best way to make a new form page is to 
+copy this one and then edit it. -->
+
+{% extends "base.html" %}
+
+{% block body %}
+        <h1>New Assignment</h1>
+
+        <form method=post>
+            {{ form.hidden_tag() }}
+            <p>
+                {{ form.assignment_name.label }} <br>
+                {{ form.assignment_name() }}
+                <!--List the errors for this field-->
+                {% for error in form.assignment_name.errors %}
+                   <br> <span style="color: red;">[{{ error }}]</span>
+                {% endfor %}
+            </p>
+            <p>
+                {{ form.course.label }} <br>
+                {{ form.course() }}
+                <!--List the errors for this field-->
+                {% for error in form.course.errors %}
+                   <br> <span style="color: red;">[{{ error }}]</span>
+                {% endfor %}
+            </p>
+            <p>
+                {{ form.period.label }} <br>
+                {{ form.period(size=6) }}
+                <!--List the errors for this field-->
+                {% for error in form.period.errors %}
+                   <br> <span style="color: red;">[{{ error }}]</span>
+                {% endfor %}
+            </p>
+            <p>
+                {{ form.teacher.label }} <br>
+                {{ form.teacher() }}
+                <!--List the errors for this field-->
+                {% for error in form.teacher.errors %}
+                   <br> <span style="color: red;">[{{ error }}]</span>
+                {% endfor %}
+            </p>
+            <p>
+                {{ form.due_date.label }} <br>
+                {{ form.due_date(size=20) }}
+                <!--List the errors for this field-->
+                {% for error in form.due_date.errors %}
+                   <br> <span style="color: red;">[{{ error }}]</span>
+                {% endfor %}
+            </p>
+            <p>
+                {{form.submit()}}
+            </p>
+        </form>
+        
+{% endblock %}
