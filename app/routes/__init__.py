@@ -4,3 +4,6 @@ from .forum import *
 from .user import *
 from .sleep import *
 from .clinic import *
+from .derivative import *
+from .limit import *
+from .integral import *

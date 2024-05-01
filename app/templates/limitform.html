@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% block body %}
+        <h1>Limits Quiz</h1>
+
+        <form method=post>
+            {{ form.hidden_tag() }}
+            <p>
+                {{ form.question1.label }} <br>
+                {{ form.question1() }}
+                <!--List the errors for this field-->
+                {% for error in form.question1.errors %}
+                   <br> <span style="color: red;">[{{ error }}]</span>
+                {% endfor %}
+            </p>
+            <p>
+                {{ form.question2.label }} <br>
+                {{ form.question2() }}
+                <!--List the errors for this field-->
+                {% for error in form.question2.errors %}
+                   <br> <span style="color: red;">[{{ error }}]</span>
+                {% endfor %}
+            </p>
+            <p>
+                {{ form.question3.label }} <br>
+                {{ form.question3() }}
+                <!--List the errors for this field-->
+                {% for error in form.question3.errors %}
+                   <br> <span style="color: red;">[{{ error }}]</span>
+                {% endfor %}
+            </p>
+            <p>
+                {{ form.question4.label }} <br>
+                {{ form.question4() }}
+                <!--List the errors for this field-->
+                {% for error in form.question4.errors %}
+                   <br> <span style="color: red;">[{{ error }}]</span>
+                {% endfor %}
+            </p>
+            <p>
+                {{ form.question5.label }} <br>
+                {{ form.question5() }}
+                <!--List the errors for this field-->
+                {% for error in form.question5.errors %}
+                   <br> <span style="color: red;">[{{ error }}]</span>
+                {% endfor %}
+            </p>
+            <p>
+                {{form.submit()}}
+            </p>
+        </form>
+        
+{% endblock %}

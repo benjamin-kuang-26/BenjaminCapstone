@@ -1,0 +1,112 @@
+<!-- This is a blank template.  You can copy this to make a new template page. -->
+
+{% extends 'base.html' %}
+
+{% block body %}
+<h1 class="display-4 text-center ">THE INTEGRAL</h1>
+<p></p>
+<center>
+    <h4>
+    So now we're gonna move on to something we've all done before:
+    </h4>
+    <h1 class="display-5 text-center">Area</h1>
+    <br>
+    <h5>
+        We all know how to calculate areas of basic shapes right? <br>
+        For example, area of a square is length x width. <br>
+        ... or area of a circle is 3.14 x squared radius. <br>
+        But let's look at this concept in a way that we would never think about. <br>
+    </h5>
+    <br>
+    <h5>
+        Here are some other shapes with area formulas for example:
+    </h5>
+    <br><br>
+    <div class="container">
+        <div class="row">
+          <div class="col">
+            <img src="/static/Trapezoid.png" width = "200" height = "200" alt="">
+          </div>
+          <div class="col">
+            <img src="/static/Circle.png" Width = "200" height = "200" alt="">
+          </div>
+          <div class = "col">
+            <img src="/static/Pentagon.png" width = "200" height = "200" alt="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <img src="/static/Trapezoidarea.png" width = "200" height = "100" alt="">
+          </div>
+          <div class="col">
+            <img src="/static/Circlearea.png" width = "200" height = "100" alt="">
+          </div>
+          <div class="col">
+            <img src="/static/Pentagonarea.png" width = "200" height = "100" alt="">
+          </div>
+        </div>
+      </div>
+    <br><br><br><br><br><br>
+</center>
+    <div class="container text-center border border-5 ">
+        <h1 class="display-4 container text-center">Let's look at this with a triangle:</h1>
+        
+        <p>
+            We're going to attempt to calculate the area of triangle in a different way. <br>
+        </p>
+        <h4>
+            We're gonna use quarters to approximate it. Assume we know the area of one quarter.
+        </h4>
+        <img src="/static/Areaquarters.jpg" width = "300" hieght= "300" alt="...">
+        <br>
+        <h6>
+            We filled the triangle with quarters to the best of our ability. There seems to be 21 quarters. <br>
+            But as we can see there is quite some space inside and some overlap with the quarters. <br>
+        </h6>
+        <br> <br> <br>
+        <img src="/static/Areanickels.jpg" width = "300" hieght= "300" alt="...">
+        <br>
+        <h6>
+            Let's use nickels now. There are more rows and columns as seen, and there's less overlap with the coins! <br>
+        </h6>
+        <br> <br> <br>
+        <p>
+            Let's do that one more time:
+        </p>
+        <img src="/static/Areadimes.jpg" width = "300" height = "300">
+        <h6> Let's use dimes now. As you can see, there's barely any overlap or space in between now! <br>
+            Compared to the quarters, there are 16 columns instead of 6. 
+        </h6>
+        <br> <br> <br>
+        <h6>
+            So what if we did that many many times and get less and less error every time? <br>
+        </h6>
+        <br>
+        <h6>
+            This is what it could look like:
+        </h6>
+        <img src="/static/Areainfinite.jpg" width = "300" height = "300"> 
+        <br>
+        <p> Now the columns and rows are infinitely small! There's no space inside or outside the triangle. <br>
+            And this goes back to the concept of infinity. Using infinitely small columns or "rectangles" we can use to approximate area. <br>
+            And although we used it on a very basic shape, this concept is key to calculus.  <br>
+            We use this idea of area to calculate very complex shapes that can't be done with normal formulas. <br>
+            Here are a few examples: 
+        </p>
+        <div class="container">
+            <div class="row">
+              <div class="col-md">
+                <img src="/static/Complexarea1.png" width = "300" height = "300" alt="Complex area 1">
+              </div>
+              <div class="col-md">
+                <img src="/static/Complexarea2.jpg" width = "300" height = "300" alt="Complex area 2">
+              </div>
+            </div>
+          </div>
+</center>
+
+
+<div class="col">
+    <a href="/integral/new" class="btn btn-primary btn-sm mt-5" role="button">Ready for the quiz?</a>
+    
+{% endblock %}

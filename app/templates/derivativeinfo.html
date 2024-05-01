@@ -1,0 +1,90 @@
+<!-- This is a blank template.  You can copy this to make a new template page. -->
+
+{% extends 'base.html' %}
+
+{% block body %}
+<h1 class="display-4 text-center ">THE DERIVATIVE</h1>
+<p></p>
+<center>
+    <h4>
+    From basic math to algebra 1 to calculus, everyone has probably heard of the term:
+    </h4>
+    <h1 class="display-5 text-center">SLOPE</h1>
+    <h6>
+        So let's talk about it:
+    </h6>
+    <br>
+    <h5>
+        Take the following scenario: <br>
+        You're given 10 apples in front of you and have to eat as many as you can in a minute: 
+        <br><br><br>
+        <img src="/static/Straightslope.jpg" width = "500" hieght= "500" alt="..."> 
+        <br><br><br>
+        Looks like this person ate 5 apples in one minute, which seems pretty fast.
+        <br><br>
+        We normally regard slope as how steep a line is, as that's probably how everyone has been taught initially. <br>
+        But in context, slope is a "rate of change," or in mathematical terms, final condition minus initial condition. <br>
+        For example, if we do the math here and use the slope formula (y2-y1) / (x2-x1), we get -5, which in context means: <br>
+        The amount of apples are being eaten at a rate of 5 per minute. <br>
+    </h5>
+    <br><br><br><br><br>
+</center>
+    <div class="container text-center border border-5 ">
+        <h1 class="display-4 container text-center">But what about a graph more complicated?</h1> <br>
+        <img src="/static/Slopeint10.jpg" width = "500" hieght= "500" alt="...">
+        <h4>
+            Seems pretty steep initially and gradually reduces after a while. <br>
+            It's like you can't eat apples as fast anymore after stuffing a few in your mouth very quickly... <br>
+            How are we going to calculate slope with this? <br>
+        </h4>
+        <br>
+        <h6>
+            What if we tried this? <br>
+        </h6>
+        <br> <br>
+        <img src="/static/Slopeint5.jpg" width = "500" hieght= "500" alt="...">
+        <br>
+        <h6>
+            Originally, the x-axis of the graph above had an interval from 0-10. <br>
+            We halved that, and now the interval is from 0-5. <br>
+            It still has a curve, respectively. Let's do that again: <br>
+        </h6>
+        <br> <br> <br>
+        <img src="/static/Slopeint2.5.jpg" width = "500" height = "400">
+        <h6> Now the interval is from 0-2.5. <br>
+            So what exactly is the purpose in doing this? <br>
+        </h6>
+        <br> <br> <br>
+        <img src="/static/Slopeint1.25.jpg" width = "500" height = "400"> <br>
+        <h6>
+            We've halved the interval one more time: Now it's from 0-1.25. <br>
+            And woah! All of a sudden the curvey graph we had before now looks like a straight line! <br>
+        </h6>
+        <br>
+        <h6>
+            So what do we notice here?
+        </h6>
+        <br>
+        <p> We've taken a graph and decreased the interval that we're looking at and focusing on one specific instant. <br>
+            So if we kept halving and halving these intervals, we would have a slope at an interval of 1/infinity.  <br>
+            This allows us to calculate slope at a very specific instant. We would call this an "instantaneous" rate of change. <br>
+            Doing this allows us to calculates rates of change with very complex graphs. <br>
+            Here are a few examples: 
+        </p>
+        <div class="container">
+            <div class="row">
+              <div class="col-md-auto">
+                <img src="/static/Derivativeslope1.jpg" width = "300" height = "300" alt="Slope 1">
+              </div>
+              <div class="col-md-auto">
+                <img src="/static/Derivativeslope2.png" width = "500" height = "300" alt="Slope 2">
+              </div>
+            </div>
+          </div>
+</center>
+
+
+<div class="col">
+    <a href="/derivative/new" class="btn btn-primary btn-sm mt-5" role="button">Ready for the quiz?</a>
+    
+{% endblock %}

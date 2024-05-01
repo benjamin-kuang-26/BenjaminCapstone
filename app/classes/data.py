@@ -97,3 +97,24 @@ class Clinic(Document):
     meta = {
         'ordering': ['-createdate']
     }
+
+class Limit(Document):
+    question1 = StringField()
+    question2 = StringField()
+    question3 = StringField()
+    question4 = StringField()
+    question5 = StringField()
+
+class Derivative(Document):
+    question1 = StringField()
+    question2 = StringField()
+    question3 = StringField()
+    question4 = StringField()
+    question5 = StringField()
+
+class Integral(Document):
+    question1 = StringField()
+    question2 = StringField()
+    question3 = StringField()
+    question4 = StringField()
+    question5 = StringField()
